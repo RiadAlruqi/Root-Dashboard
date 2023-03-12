@@ -1,0 +1,518 @@
+﻿<html>
+	<head>
+			<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="style.css" type="text/css">
+
+	</head>
+	<body>
+<! -- This mod its Created By : RiadAlruqi -->
+<b>		
+
+		<div id="container">
+			<div id="header">
+			<div id="pic">
+			</div>
+			<div><div>
+			<div id="pages"> 
+			
+			</div>
+
+		</div><b>
+				<br>
+		<div id="h1" >      Team-Root  </h1>
+ <span id="nick"></span>
+ <button class="button"onclick="myFunction()"> Change Mode !</button>
+
+		<script >
+var pages = document.getElementById("pages")
+
+function CreateOption(fancyName) {
+    var newPage = document.createElement("div")
+    newPage.textContent = fancyName
+    newPage.setAttribute("class", "cat")
+    pages.appendChild(newPage)
+  
+    return newPage
+}
+
+function CreatePage(arr) {
+  var pagesToReturn = []
+  for (var i = 0; i < arr.length; i++) {
+    var newPage = CreateOption(arr[i])
+    pagesToReturn.push(newPage)
+  }
+  
+  return pagesToReturn
+}
+
+function HideMenu(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i].style.display = "none"
+  }
+}
+
+function ShowMenu(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i].style.display = "block"
+  }
+}
+
+var currentMenu;
+function OpenMenuItem(newMenu) {
+  HideMenu(currentMenu)
+  ShowMenu(newMenu)
+  currentMenu = newMenu
+}
+function myFunction() {
+    var element = document.querySelector('body');
+    element.classList.toggle("dark-mode");
+
+ }
+ 
+//mainPage();
+const mainPageOptions = [
+    ' [ السيارات | Cars <🚗> ]',
+     '[ التعديلات | Adjustments  <✌🏻> ]',
+      '[ الوقت والجو | Time & Weather <☁️> ]',
+       '[ الإعدادات | Settings <⚙️> ]',
+        '[ Team-Root | 🎆 ]',
+         '[ Special Thanks  | 🎆 ]',
+        ];
+var mainMenu = CreatePage(mainPageOptions);
+var player = mainMenu[0];
+var Adj = mainMenu[1];
+var Sky = mainMenu[2];
+var Sti = mainMenu[3];
+var TRoot1 = mainMenu[4];
+var TRoot = mainMenu[5];
+const playerPageOptions = [
+    '[ New Car | السيارات الجديدة  ]', 
+    '[ TOYOTA  | تـويـوتـا  ]',
+    '[ CHVROLEAT |  شـيـفرولـية   ]',
+    '[ HYUNDAI  | هـونداي  ]',
+    '[  HONDA | هــوندا  ]',
+    '[  MAZDA | مــازدا  ]',
+    '[  FORD | فــورد  ]',
+    '[  NISSAN  | نيســان  ]',
+    '[  KIA  | كــيـا  ]',
+    '[  LEXUS  | لــكزس  ]',
+    '[  GMC | جــمـس  ]',
+
+];
+var playerMenu = CreatePage(playerPageOptions);
+var cars = playerMenu[0];
+var Toyota = playerMenu[1];
+var Chvroleat = playerMenu[2];
+var Hyundai = playerMenu[3];
+var Honda = playerMenu[4];
+var Mazda = playerMenu[5];
+var Ford = playerMenu[6];
+var Nissan = playerMenu [7];
+var Kia = playerMenu[8];
+var Lexus = playerMenu[9];
+var Gmc = playerMenu[10];
+
+const carsPageOptions = [
+"هوندا اكورد نسخة جديدة | 2017",
+"كيا كادينزا | 2021",
+" نيسان التيما | 2010",
+" هونداي سوناتا | 2010",
+
+]
+var carsMenu=CreatePage(carsPageOptions);
+var Accord172 = carsMenu[0];
+var Cadinza21 = carsMenu[1];
+var Altema10 = carsMenu[2];
+var Sonata10 = carsMenu[3];
+
+const ToyotaPageOptions = [
+" تويوتا كامري | 2020",
+"تويوتا افلون | 2020",
+"تويوتا كامري | 2011",
+"تويوتا كامري | 2006",
+"لاند كروزر | 2007",
+];
+var ToyotaMenu = CreatePage(ToyotaPageOptions);
+var camry19 = ToyotaMenu[0];
+var Avalon = ToyotaMenu[1];
+var Camry11 =ToyotaMenu[2];
+var Camry6 = ToyotaMenu[3];
+var Land7 = ToyotaMenu[4];
+
+const ChvroleatPageOptions = [
+"شيفرولية سبارك | 2018",
+"شيفرولية كابرس | 2016",
+"شيفرولية كابرس | 2013",
+
+];
+var ChvroleatMenu = CreatePage(ChvroleatPageOptions);
+var Spark = ChvroleatMenu[0];
+var Caprice16 = ChvroleatMenu[1];
+var Caprice13 = ChvroleatMenu[2];
+
+
+
+const HyundaiPageOptions = [
+"هونداي سوناتا | 2021",
+"هونداي النترا | 2021",
+"هونداي سوناتا | 2011",
+
+
+];
+var HyundaiMenu = CreatePage(HyundaiPageOptions);
+var Sonata21 = HyundaiMenu[0];
+var Alentra21 = HyundaiMenu[1];
+var Sonata11 = HyundaiMenu[2];
+
+const HondaPageOptions = [
+"هوندا اكورد | 2020",
+"هوندا اكورد | 2017",
+"هوندا اكورد | 2012",
+"هوندا اكورد | 2004",
+
+];
+
+var HondaMenu = CreatePage(HondaPageOptions);
+var Accord20 = HondaMenu[0];
+var Accord17 = HondaMenu[1];
+var Accord12 = HondaMenu[2];
+var Accord2004 = HondaMenu[3];
+const MazdaPageOptions = [
+" نعتذر عن عدم وجود سيارات ]:",
+
+
+];
+
+var MazdaMenu = CreatePage(MazdaPageOptions);
+
+
+const FordPageOptions = [
+" نعتذر عن عدم وجود سيارات ]:",
+
+
+];
+
+var FordMenu = CreatePage(FordPageOptions);
+
+
+const NissanPageOptions = [
+"التيما | 2020",
+
+]
+
+var NissanMenu = CreatePage(NissanPageOptions);
+var Altema20 = NissanMenu[0];
+
+
+const KiaPageOptions = [
+"كيا كادينزا | 2016",
+"كيا اوبتيما | 2015",
+]
+
+var KiaMenu = CreatePage(KiaPageOptions);
+var Cadinza16 =KiaMenu[0];
+var Optima16 =KiaMenu[1];
+
+const LexusPageOptions = [
+" نعتذر عن عدم وجود سيارات ]:",
+]
+
+var LexusMenu = CreatePage(LexusPageOptions);
+
+const GmcPageOptions = [
+" نعتذر عن عدم وجود سيارات ]:",
+]
+
+var GmcMenu = CreatePage(GmcPageOptions);
+
+
+const AdjPageOptions = [
+    'تركيب الهيدروليك',
+ 'ازالة الهيدروليك',
+   ' الجنوط ',
+   'تشغيل مانع التصادم',
+   ' اطفاء مانع التصادم',
+];
+var AdjMenu = CreatePage(AdjPageOptions);
+var Hed = AdjMenu[0];
+var unHed = AdjMenu[1];
+var gn6 = AdjMenu[2];
+var t9adm = AdjMenu[3];
+var not9adm = AdjMenu[4];
+
+const gn6PageOptions = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+var gn6Menu = CreatePage(gn6PageOptions);
+var g1 = gn6Menu[0];
+var g2 = gn6Menu[1];
+var g3 = gn6Menu[2];
+var g4 = gn6Menu[3];
+var g5 = gn6Menu[4];
+var g6 = gn6Menu[5];
+var g7 = gn6Menu[6];
+var g8 = gn6Menu[7];
+var g9 = gn6Menu[8];
+var g10 = gn6Menu[9];
+var g11 = gn6Menu[10];
+var g12 = gn6Menu[11];
+const SkyPageOptions = ['ممطر', 'صافي', 'شمس', 'ليل', 'صباح', 'المغرب', 'ضباب', 'الفجر'];
+var SkyMenu = CreatePage(SkyPageOptions);
+var m6r = SkyMenu[0];
+var safi = SkyMenu[1];
+var sms = SkyMenu[2];
+var lel = SkyMenu[3];
+var sba7 = SkyMenu[4];
+var m5rb = SkyMenu[5];
+var dbab = SkyMenu[6];
+var fjr = SkyMenu[7];
+const StiPageOptions = ['تشغيل - إيقاف الجرافيكس', 'فتح لوحة الادمن | للادمنية فقط ☠️'];
+var StiMenu = CreatePage(StiPageOptions);
+var grafix = StiMenu[0];
+var adminpanal = StiMenu[1];
+const TRoot1PageOptions = ["RiadAlruqi", 'Zyad','8rWshH', 'Pablo'];
+var TRoot1Menu = CreatePage(TRoot1PageOptions);
+const TRootPageOptions = ["RiadAlruqi", 'Zyad','8rWshH', 'Pablo'];
+var TRootMenu = CreatePage(TRootPageOptions);
+
+HideMenu(mainMenu);
+HideMenu(playerMenu);
+HideMenu(carsMenu);
+HideMenu(SkyMenu);
+HideMenu(AdjMenu);
+HideMenu(StiMenu);
+HideMenu(TRootMenu);
+HideMenu(TRoot1Menu);
+HideMenu(gn6Menu);
+HideMenu(ToyotaMenu);
+HideMenu(ChvroleatMenu);
+HideMenu(HyundaiMenu);
+HideMenu(HondaMenu);
+HideMenu(MazdaMenu);
+HideMenu(FordMenu);
+HideMenu(NissanMenu);
+HideMenu(KiaMenu);
+HideMenu(LexusMenu);
+HideMenu(GmcMenu);
+currentMenu = mainMenu;
+OpenMenuItem(mainMenu);
+var returnToMain = CreateOption('[ Main - Menu  || إلقائمة الرئيسية ↪️ ]');
+var Close = CreateOption('[ Close | إغلاق ]');
+returnToMain.addEventListener('click', function () {
+    OpenMenuItem(mainMenu)
+});
+Close.addEventListener('click', function () {
+    mta.triggerEvent('Close')
+});
+player.addEventListener('click', function () {
+    OpenMenuItem(playerMenu)
+});
+cars.addEventListener('click', function () {
+    OpenMenuItem(carsMenu)
+});
+Toyota.addEventListener('click',function() {
+OpenMenuItem(ToyotaMenu)
+});
+Chvroleat.addEventListener('click',function() {
+OpenMenuItem(ChvroleatMenu)
+});
+Hyundai.addEventListener('click',function() {
+OpenMenuItem(HyundaiMenu)
+});
+Honda.addEventListener('click',function() {
+OpenMenuItem(HondaMenu)
+});
+
+Mazda.addEventListener('click',function() {
+OpenMenuItem(MazdaMenu)
+});
+Ford.addEventListener('click',function() {
+OpenMenuItem(FordMenu)
+});
+Nissan.addEventListener('click',function() {
+OpenMenuItem(NissanMenu)
+});
+
+Kia.addEventListener('click',function() {
+OpenMenuItem(KiaMenu)
+});
+
+Lexus.addEventListener('click',function() {
+OpenMenuItem(LexusMenu)
+});
+
+Gmc.addEventListener('click',function() {
+OpenMenuItem(GmcMenu)
+});
+
+Sky.addEventListener('click', function () {
+    OpenMenuItem(SkyMenu)
+});
+Sti.addEventListener('click', function () {
+    OpenMenuItem(StiMenu)
+});
+TRoot.addEventListener('click', function () {
+    OpenMenuItem(TRootMenu)
+});
+TRoot1.addEventListener('click', function () {
+    OpenMenuItem(TRoot1Menu)
+});
+
+Adj.addEventListener('click', function () {
+    OpenMenuItem(AdjMenu)
+});
+gn6.addEventListener('click', function () {
+    OpenMenuItem(gn6Menu)
+});
+grafix.addEventListener('click', function () {
+    mta.triggerEvent('grafix')
+});
+Hed.addEventListener('click', function () {
+    mta.triggerEvent('Hed')
+});
+
+t9adm.addEventListener('click', function () {
+    mta.triggerEvent('t9adm')
+});
+
+not9adm.addEventListener('click', function () {
+    mta.triggerEvent('not9adm')
+});
+
+unHed.addEventListener('click', function () {
+    mta.triggerEvent('UnHed')
+});
+g1.addEventListener('click', function () {
+    mta.triggerEvent('g1')
+});
+g2.addEventListener('click', function () {
+    mta.triggerEvent('g2')
+});
+g3.addEventListener('click', function () {
+    mta.triggerEvent('g3')
+});
+g4.addEventListener('click', function () {
+    mta.triggerEvent('g4')
+});
+g5.addEventListener('click', function () {
+    mta.triggerEvent('g5')
+});
+g6.addEventListener('click', function () {
+    mta.triggerEvent('g6')
+});
+g7.addEventListener('click', function () {
+    mta.triggerEvent('g7')
+});
+g8.addEventListener('click', function () {
+    mta.triggerEvent('g8')
+});
+g9.addEventListener('click', function () {
+    mta.triggerEvent('g9')
+});
+g10.addEventListener('click', function () {
+    mta.triggerEvent('g10')
+});
+g11.addEventListener('click', function () {
+    mta.triggerEvent('g11')
+});
+g12.addEventListener('click', function () {
+    mta.triggerEvent('g12')
+});
+  camry19.addEventListener("click", function() {
+   mta.triggerEvent("camry19");
+  });
+  Accord2004.addEventListener("click", function() {
+   mta.triggerEvent("Accord2004");
+  });
+
+  Sonata21.addEventListener("click", function() {
+   mta.triggerEvent("Sonata21");
+  });
+
+  Accord12.addEventListener("click", function() {
+   mta.triggerEvent("Accord12");
+  });
+
+  Altema20.addEventListener("click", function() {
+   mta.triggerEvent("Altema20");
+  });
+  Accord172.addEventListener("click", function() {
+   mta.triggerEvent("Accord172");
+  });
+
+  Land7.addEventListener("click", function() {
+   mta.triggerEvent("Land7");
+  });
+
+  Alentra21.addEventListener('click', function () {
+    mta.triggerEvent('Alentra21')
+});
+  Cadinza21.addEventListener('click', function () {
+    mta.triggerEvent('Cadinza21')
+});
+  Altema10.addEventListener('click', function () {
+    mta.triggerEvent('Altema10')
+});
+  Sonata10.addEventListener('click', function () {
+    mta.triggerEvent('Sonata10')
+});
+
+Avalon.addEventListener('click', function () {
+    mta.triggerEvent('Avalon')
+});
+Accord20.addEventListener('click', function () {
+    mta.triggerEvent('Accord20')
+});
+
+Spark.addEventListener('click', function () {
+    mta.triggerEvent('Spark')
+});
+Accord17.addEventListener('click', function () {
+    mta.triggerEvent('Accord17')
+});
+Caprice16.addEventListener('click', function () {
+    mta.triggerEvent('Caprice16')
+});
+Cadinza16.addEventListener('click', function () {
+    mta.triggerEvent('Cadinza16')
+});
+Optima16.addEventListener('click', function () {
+    mta.triggerEvent('Optima16')
+});
+Caprice13.addEventListener('click', function () {
+    mta.triggerEvent('Caprice13')
+});
+Sonata11.addEventListener('click', function () {
+    mta.triggerEvent('Sonata11')
+});
+Camry11.addEventListener('click', function () {
+    mta.triggerEvent('Camry11')
+});
+Camry6.addEventListener('click', function () {
+    mta.triggerEvent('Camry6')
+});
+m6r.addEventListener('click', function () {
+    mta.triggerEvent('time1')
+});
+safi.addEventListener('click', function () {
+    mta.triggerEvent('time2')
+});
+sms.addEventListener('click', function () {
+    mta.triggerEvent('time3')
+});
+lel.addEventListener('click', function () {
+    mta.triggerEvent('time4')
+});
+sba7.addEventListener('click', function () {
+    mta.triggerEvent('time5')
+});
+m5rb.addEventListener('click', function () {
+    mta.triggerEvent('time6')
+});
+dbab.addEventListener('click', function () {
+    mta.triggerEvent('time7')
+});
+fjr.addEventListener('click', function () {
+    mta.triggerEvent('time8')
+})
+</script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+<meta>
+    <script src="c.lua" type="client"  cache="false"/>
+    <script src="s.lua" type="server "cache="false" />
+		<file src="index.html" cache="false" />
+
+		<file src="style.css" cache="false" />
+	<file src="MyFont.ttf" />
+	<file src="img/smallbackground.png" />
+	<script src='root.lua' type='client' cache="false" />
+</meta>

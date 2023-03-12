@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("MyFont.ttf");
+}
+
+body {
+  --back-color :#000000;
+  --hoverx-color :#ff0000;
+}
+.dark-mode {
+  --text :#bbb;
+  --hover-color:var(--background);
+  --background :  #2e2e2e;
+  --h1 : #eeeeee;
+  --back-color:var(--background);
+  --hoverx-color:#299999;
+}
+
+#container {
+  font-family: "MyFont";
+
+  background-color: var(--nevada-color);
+
+  position: absolute;
+  top: 170px;
+  right: 96%;
+  width: 2px;
+}
+button{
+font-family: "MyFont";
+
+
+background-color: var(--nevada-color);
+
+}
+
+.button {
+  font-family: "MyFont";
+  color:#000;
+  font-size: 14px;
+  border-bottom: auto;
+  width: 120px;
+  font-family: "MyFont";
+  border-radius: 5px;
+}
+
+
+
+#header {
+  font-family: "MyFont";
+
+  color: var(--back-color);
+  background-color: var(--back-color);
+  font-size: 15px;
+  width: 340px;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding: 5px;
+  border-radius: 15px;
+
+}
+
+#pic {
+  margin: auto;
+  opacity: 0.5;
+
+  text-align: center;
+  background-image: url("img/smallbackground.png");
+  border-top: auto;
+  border-bottom: auto;
+  color: #bbb;
+  width: auto;
+  padding: 30px 30px;
+  font-family: "MyFont";
+  border-radius: 25px;
+
+}
+
+#header accent {
+  padding-left: 35px;
+  font-family: "MyFont";
+
+}
+
+
+
+#pages {
+  font-family: "MyFont";
+
+  color: rgb(255, 255, 255);
+  background-color: var(--hover-color);
+  font-size: 14px;
+  width: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+  border: 1px;
+  padding: auto;
+  border-radius: 22px;
+
+}
+
+
+ #h1 {
+  background-color: #fff;
+	  font-size: 14px;
+    font-family: "MyFont";
+	text-align: center;
+
+  }
+
+
+.cat {
+
+
+  display: block;
+  font-family: "MyFont";
+  text-align: center;
+
+
+  background-color: var(--hover-color);
+  margin: 0;
+  padding: 0;
+  border-width: 111px;
+
+  padding-top:20px;
+  padding-bottom: 5px;
+  padding-left: 12px
+}
+
+
+.cat:hover {
+  font-family: "MyFont";
+
+  color: var(--hoverx-color);
+  background-color: #2e2e2e;
+  opacity: 1;
+
+
+  font-size: 16px;
+  border-radius: 2px;
+
+}
+
+.cat:hover::after {
+
+color: #fff000;
+  content:' ★ '; 
+
+}
+
+#accent {
+  color: rgb(0, 0, 0);
+  color: var(--nevada-color);
+  font-family: "MyFont";
+
+}
+
+a {
+  text-decoration: none
+}
